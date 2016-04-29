@@ -94,10 +94,15 @@ public class Solver {
     } else if (board[0] == board.length - 1) {
       /* count how many distinct vertical positions of the queens
        * 1 distinct position means that all queens are at the end of their row
-       * and their row positions will be reset to 0 */
-      reset = Arrays.stream(board).distinct().count() == 1;
-    } else {
-      reset = false;
+       * and their row positions will be reset to 0
+       * using hashset */
+      Set<Integer> set = new HashSet<Integer>();
+      
+      for (int i : board) {
+        set.add(i);
+      }
+      
+      reset = set.size() == 1;
     }
 
     /* if reset, return queen array with all 0 */
