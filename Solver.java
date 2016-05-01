@@ -16,7 +16,7 @@ import java.util.HashSet;
 
 public class Solver {
   /* solve method */
-  public static int solve(int n, int w, int a, int[] board) {
+  public static long solve(int n, int w, long a, int[] board) {
     double N = n;           /* convert to double for pow operation */
     boolean add = false;    /* determines whether or not to add to a */
     /* total number of possible board configurations */
