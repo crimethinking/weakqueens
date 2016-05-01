@@ -23,7 +23,7 @@ public class WeakQueens {
     
     /* initialize board and variable to store number of solutions */
     int[] board = new int[n];
-    int a = 0;
+    long a = 0;
     
     System.out.println("\nRunning...");
     
