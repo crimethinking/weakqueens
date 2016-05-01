@@ -10,7 +10,9 @@ package edu.jcu.zgray_dnguyen_dwallett;
  * 
  * Algorithm and solver implementation */
 
+import java.util.Set;
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class Solver {
   /* solve method */
