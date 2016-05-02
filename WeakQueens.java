@@ -1,5 +1,7 @@
 package edu.jcu.zgray_dnguyen_dwallett;
- 
+
+import java.util.concurrent.TimeUnit;
+
 /* Authors: Zakary Gray, Duy Nguyen, David Wallett
  * Date:    4/29/18
  * 
@@ -18,21 +20,30 @@ public class WeakQueens {
     
     /* rerun the program if weakness >= number of queens */
     if (w >= n) {
-      main(args);
+      n = Input.getNumQueens();
+      w = Input.getWeakness();
     }
+    
+    /* get start time in nanoseconds */
+    final long startTime = System.nanoTime();
     
     /* initialize board and variable to store number of solutions */
     int[] board = new int[n];
-    long a = 0;
+    long a = 0L;
     
     System.out.println("\nRunning...");
     
     /* run solve method */
     a = Solver.solve(n, w, a, board);
     
-    /* print out the number of configurations */
-    System.out.println(n + " queen(s) with weakness " + w 
-                         + " can be placed on a " + n 
-                         + "x" + n + " board in " + a + " way(s).");
+    /* calculate elapsed time */
+    final long elapsedTime = System.nanoTime() - startTime;
+    
+    /* print out the number of configurations and run time */
+    System.out.println("\n" + n + " queen(s) with weakness " + w 
+                         + " can be placed on a " + n  + "x" + n
+                         + " board in " + a + " way(s).");
+    System.out.println("Elapsed time: " + TimeUnit.MILLISECONDS.convert
+                      (elapsedTime, TimeUnit.NANOSECONDS) + "ms.");
   }
 }
