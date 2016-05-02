@@ -10,9 +10,9 @@ package edu.jcu.zgray_dnguyen_dwallett;
  * 
  * Algorithm and solver implementation */
 
-import java.util.Set;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 public class Solver {
   /* solve method */
@@ -20,7 +20,7 @@ public class Solver {
     double N = n;           /* convert to double for pow operation */
     boolean add = false;    /* determines whether or not to add to a */
     /* total number of possible board configurations */
-    int numberOfIterations = (int) Math.pow(N, N);
+    long numberOfIterations = (long) Math.pow(N, N);
     
     /* if, then all possible configurations are valid */
     if (n == (w + 1)) {
@@ -46,7 +46,7 @@ public class Solver {
   /* chooses pairs of queens to test */
   public static boolean test(int[] board, int n, int w) {
     boolean threatened = false;
-    int numThreatened = 0;  /* used as a switch later */
+    long numThreatened = 0L;  /* used as a switch later */
     
     for (int index = 0; index < board.length; index++) {
       /* choose each possible pair of queens */
@@ -105,6 +105,8 @@ public class Solver {
       }
       
       reset = set.size() == 1;
+    } else {
+      reset = false;
     }
 
     /* if reset, return queen array with all 0 */
