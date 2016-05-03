@@ -17,7 +17,7 @@ public class Input {
   @SuppressWarnings("resource")
   public static int getNumQueens() {
     Scanner reader = new Scanner(System.in);
-    System.out.println("\nEnter a board size/number of queens: ");
+    System.out.print("\nEnter a board size/number of queens: ");
     int n = reader.nextInt();
     
     return n;
@@ -27,7 +27,7 @@ public class Input {
   @SuppressWarnings("resource")
   public static int getWeakness() {
     Scanner reader = new Scanner(System.in);
-    System.out.println("Enter a weakness for the queens: ");
+    System.out.print("Enter a weakness for the queens: ");
     int w = reader.nextInt();
     
     return w;
