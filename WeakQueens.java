@@ -44,6 +44,6 @@ public class WeakQueens {
                          + " can be placed on a " + n  + "x" + n
                          + " board in " + a + " way(s).");
     System.out.println("Elapsed time: " + TimeUnit.MILLISECONDS.convert
-                      (elapsedTime, TimeUnit.NANOSECONDS) + "ms.");
+                      (elapsedTime, TimeUnit.NANOSECONDS) + "ms.\n");
   }
 }
