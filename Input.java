@@ -1,5 +1,3 @@
-package edu.jcu.zgray_dnguyen_dwallett;
-
 /* Authors: Zakary Gray, Duy Nguyen, David Wallett
  * Date:    4/29/18
  * 
