@@ -1,5 +1,3 @@
-package edu.jcu.zgray_dnguyen_dwallett;
-
 import java.util.concurrent.TimeUnit;
 
 /* Authors: Zakary Gray, Duy Nguyen, David Wallett
