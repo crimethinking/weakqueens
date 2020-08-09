@@ -12,15 +12,19 @@ import java.util.concurrent.TimeUnit;
 
 public class WeakQueens {
   public static void main(String[] args) {
-    /* get number of queens and weakness from user input */
+    /* get number of queens and weakness from user input
     int n = Input.getNumQueens();
-    int w = Input.getWeakness();
+    int w = Input.getWeakness();*/
     
-    /* rerun the program if weakness >= number of queens */
+    /* temporarily hardcode values to demo Jenkins building */
+    int n = 8;
+    int w = 5;
+    
+    /* rerun the program if weakness >= number of queens
     if (w >= n) {
       n = Input.getNumQueens();
       w = Input.getWeakness();
-    }
+    }*/
     
     /* get start time in nanoseconds */
     final long startTime = System.nanoTime();
