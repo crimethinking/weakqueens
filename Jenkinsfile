@@ -72,7 +72,7 @@ pipeline {
   post {
     always {
       archiveArtifacts 'target/*.jar'
-      cleanWs()
+      //cleanWs()
       publishHTML(
         target: [
           allowMissing: false,
