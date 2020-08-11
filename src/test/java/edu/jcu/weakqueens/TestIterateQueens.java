@@ -1,4 +1,4 @@
-package edu.jcu.zgray_dnguyen_dwallett;
+package edu.jcu.weakqueens;
 
 import static org.junit.Assert.*;
 

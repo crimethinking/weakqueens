@@ -1,3 +1,5 @@
+package edu.jcu.weakqueens;
+
 import java.util.concurrent.TimeUnit;
 
 /* Authors: Zakary Gray, Duy Nguyen, David Wallett

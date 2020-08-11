@@ -1,3 +1,5 @@
+package edu.jcu.weakqueens;
+
 /* Authors: Zakary Gray, Duy Nguyen, David Wallett
  * Date:    4/29/18
  * 
