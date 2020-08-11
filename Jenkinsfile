@@ -51,7 +51,7 @@ pipeline {
           publishers: [
             sshPublisherDesc(
               configName: 'app',
-              verbose: true,
+              verbose: false,
               transfers: [
                 sshTransfer(
                   sourceFiles: 'target/*.jar',
