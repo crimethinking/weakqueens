@@ -1,0 +1,8 @@
+- hosts: all
+  become: true
+
+  tasks:
+    - name: ensure default-jre-headless is installed on debian
+      package:
+        name: default-jre-headless
+        state: present
