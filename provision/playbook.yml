@@ -2,7 +2,7 @@
   become: true
 
   tasks:
-    - name: ensure default-jre-headless is installed on debian
+    - name: ensure amazon corretto jdk 8 is installed on debian
       package:
-        name: default-jre-headless
+        name: java-1.8.0-amazon-corretto-jdk
         state: present
