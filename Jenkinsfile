@@ -72,17 +72,7 @@ pipeline {
   post {
     always {
       archiveArtifacts 'target/*.jar'
-      //cleanWs()
-      publishHTML(
-        target: [
-          allowMissing: false,
-          alwaysLinkToLastBuild: false,
-          keepAll: true,
-          reportDir: '',
-          reportFiles: 'index.html',
-          reportName: "Report"
-        ]
-      )     
+      cleanWs()
     }
   }
 }
