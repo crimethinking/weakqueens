@@ -7,6 +7,8 @@ pipelines:
         caches:
           - maven
         script:
-          - mvn verify
-          - mvn clean package -DskipTests
-          - mvn test
+          - mvn verify -B
+          - mvn clean package -DskipTests -B
+          - mvn test -B
+        artifacts:
+          - target/*.jar
